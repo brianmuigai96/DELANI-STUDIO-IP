@@ -1,17 +1,16 @@
-.about h1{
-  text-align: center;
-}
-.about p{
+.about{
   text-align: center;
 }
 .what-we-do h1{
   text-align: center;
 }
-.portfolio h1{
+.portfolio{
   text-align: center;
 }
-.contact-us h1{
+.contact-us{
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 .footer{
   text-align: center;
