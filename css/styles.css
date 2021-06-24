@@ -1,15 +1,18 @@
-.what-we-do{
-}
-.what-we-do h1{
-  text-align: center;
-}
-
 .about h1{
   text-align: center;
 }
 .about p{
   text-align: center;
 }
+.what-we-do h1{
+  text-align: center;
+}
 .portfolio h1{
+  text-align: center;
+}
+.contact-us h1{
+  text-align: center;
+}
+.footer{
   text-align: center;
 }
