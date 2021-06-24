@@ -1,5 +1,7 @@
 .what-we-do{
-  display: flex;
+}
+.what-we-do h1{
+  text-align: center;
 }
 
 .about h1{
