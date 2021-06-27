@@ -1,3 +1,41 @@
+.intro {
+    background-image: url('../assets/backgrounds/h_img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    font-family: 'Playfair Display', serif;
+}
+
+.intro h1 {
+    padding: 10px;
+    margin: 10px;
+    font-size: 50px;
+    margin-top: 0px;
+    font-size: 300%;
+}
+
+.intro p {
+    padding: 1px;
+    padding: 50px;
+    font-size: 140%;
+}
+
+#logo {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    width: 90px;
+    height: 90px;
+}
+
+#mouse {
+    padding-top: 22px;
+    margin-top: 10%;
+    padding-bottom: 30px;
+}
 .about{
   text-align: center;
 }
