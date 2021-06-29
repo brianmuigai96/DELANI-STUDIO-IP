@@ -17,12 +17,14 @@ on the my  repository click the green button written "code"
 copy that link by clicking the clip board option
 Go to your terminal and select the place you want to clone the project. write "git clone followed by the link you copied "
 By doing so you will have clone my whole project to your local computer
+
 ### Technologies Used
 
 Built with:
 1. HTML
 2. CSS
 3. JAVASCRIPT
+4. JQUERY
 
 ##### Support and Contact Information
 If you encounter any problem you can always reach out and will help you accordingly via Email
