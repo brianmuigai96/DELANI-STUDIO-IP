@@ -34,17 +34,17 @@
         <h1>WHAT WE DO</h1>
       <div class="dis">
         <div class="design">
-          <img src="design_icon.png" alt="design_icon">
-          <h6>DESIGN</h6>
-          <div class="design-text">
+          <img src="design_icon.png" alt="design_icon" id="design-img">
+          <h6 id="head1">DESIGN</h6>
+          <div class="design-text" style="align-item:center;">
             <h6>DESIGN</h6>
             <p>Our design practice offers a full range of services<br>including brand strategy,interaction and visual design<br>and user experience testing.</p>
             <p>Throughout your project, our designers create and <br> implement visual design and workflows,solicit user<br>feeback and work with you to make sure what gets built<br>is what is needed.</p>
           </div>
         </div>
         <div class="development">
-          <img src="dev_icon.png" alt="dev_icon">
-          <h6>DEVELOPMENT</h6>
+          <img src="dev_icon.png" alt="dev_icon" id="development-img">
+          <h6 id="head2">DEVELOPMENT</h6>
           <div class="development-text">
             <h6>DEVELOPMENT</h6>
             <p>All engineers are fluent in the latest enterprise,mobile<br>and web development technologies.</p>
@@ -52,8 +52,8 @@
           </div>
         </div>
         <div class="product">
-          <img src="product_icon.png" alt="product_icon">
-          <h6>PRODUCT MANAGEMENT</h6>
+          <img src="product_icon.png" alt="product_icon" id="product-img">
+          <h6 id="head3">PRODUCT MANAGEMENT</h6>
           <div class="product-text">
             <h6>PRODUCT MANAGEMENT</h6>
             <p>Planning and development is iterative. Because we are<br>constantly coding and testing, the products we build are always ready to go live.</p>
@@ -69,53 +69,72 @@
         <div class="row">
           <div class="col-md-3 col-sm-6">
             <div class="card">
-              <img src="work4.jpg" alt="" class="img-fluid">
+              <img src="work4.jpg" alt="" class="img-fluid" class="time">
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="card">
-              <img src="work3.jpg" alt="" class="img-fluid">
+              <img src="work3.jpg" alt="" class="img-fluid" class="time">
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="card">
-              <img src="work2.jpg" alt="" class="img-fluid">
+              <img src="work2.jpg" alt="" class="img-fluid" class="time">
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="card">
-              <img src="work1.jpg" alt="" class="img-fluid">
+              <img src="work1.jpg" alt="" class="img-fluid" class="time">
             </div>
           </div>
         </br>
           <div class="col-md-3 col-sm-6">
             <div class="card" style="margin-top:15%">
-              <img src="work5.jpg" alt="" class="img-fluid">
+              <img src="work5.jpg" alt="" class="img-fluid" class="time">
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="card" style="margin-top:15%">
-              <img src="work6.jpg" alt="" class="img-fluid">
+              <img src="work6.jpg" alt="" class="img-fluid" class="time">
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="card" style="margin-top:15%">
-              <img src="work7.jpg" alt="" class="img-fluid">
+              <img src="work7.jpg" alt="" class="img-fluid" class="time">
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="card" style="margin-top:15%">
-              <img src="work8.jpg" alt="" class="img-fluid">
+              <img src="work8.jpg" alt="" class="img-fluid" class="time">
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="contact-us">
-      <h1>CONTACT US</h1>
-     </div>
-
+    <div class="backgroundimage-ContactUs">
+          <div class="contact">
+              <div class="container form-info">
+                  <h3 style="margin-left: 40%;font-size: 250%;">CONTACT US</h3>
+                  <div class="form">
+                      <form action="" id="theform">
+                          <div class="row">
+                              <div class="col-6 ">
+                                  <label for="exampleFormControlInput1" class="form-label"></label>
+                                  <input type="name" class="form-control" id="name" required placeholder="Name...">
+                              </div>
+                              <div class="col-6">
+                                  <label for="exampleFormControlInput1" class="form-label"></label>
+                                  <input type="email" class="form-control form" id="email" required placeholder="Email...">
+                              </div>
+                          </div>
+                              <label for="exampleFormControlTextarea1" class="form-label"></label>
+                              <textarea id="message" class="form-control" placeholder="Your message here..." rows="7" spellcheck="false" style="margin-top: 10%;opacity: 0.3;font-size: 23px;"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-light col-md-1" style="margin-left: 45%;background-color: gray;">Submit</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
     <footer class="footer">
       <img src="twitter.png" alt="twitter">
       <img src="dribble.png" alt="dribble">
@@ -128,7 +147,36 @@
       <img src="flickr.png" alt="flickr">
       <p>DELANI STUDIO<br>2019</p>
     </footer>
-    <script src="../js/jquery.js" charset="utf-8"></script>
-    <script src="../js/script.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function()
+            {$(".time").hover(function()
+            {$(this).animate({"opacity":0.3},500)
+            },
+            function()
+            {$(this).animate({"opacity":1},500)});
+            });
+
+
+            $("#design-img").click(function(){
+                $("#design-text").show() && $("#design-img").hide() && $("#head1").hide();
+            });
+            $("#design-text").click(function(){
+                $("#design-text").hide() && $("#design-img").show() && $("#head1").show();
+            });
+            $("#development-img").click(function(){
+                $("#development-text").show() && $("#development-img").hide() && $("#head2").hide();
+            });
+            $("#development-text").click(function(){
+                $("#development-text").hide() && $("#development-img").show() && $("#head2").show();
+            });
+            $("#product-img").click(function(){
+                $("#product-text").show()&&  $("#product-img").hide() && $("#head3").hide();{
+                }
+            });
+            $("#product-text").click(function(){
+                $("#product-text").hide() && $("#product-img").show() && $("#head3").show();
+            });
+        </script>
   </body>
 </html>
