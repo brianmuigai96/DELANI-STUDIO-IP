@@ -19,9 +19,20 @@ $(document).ready(function(){
   $("#product-text").click(function(){
       $("#product-text").hide() && $("#product-img").show() && $("#head3").show();
   });
-
-
 });
+
+// portfolio section
+$(document).ready(function(){
+    var portfolio =[{name:"task1",info:"remo1"},{name:"task2",info:"remo2"},{name:"task3",info:"remo3"},{name:"task4",info:"remo4"},{name:"task5",info:"remo5"},{name:"task6",info:"remo6"},{name:"task7",info:"remo7"},{name:"task8",info:"remo8"}];
+    portfolio.forEach(function(ride){
+        $("#" +ride.name).mouseover(function(){
+            $("#"+ride.info).show();
+        }).mouseout(function(){
+            $("#"+ride.info).hide();
+        });
+    })
+});
+
 //Contact secion
   function contactForm(){
       var nameInput = document.getElementById('name').value;
@@ -38,16 +49,4 @@ $(document).ready(function(){
           alert(name + " we have received your message. Thank you fro reaching out to us.")
       }
   }
-
-
-// portfolio section
-$(document).ready(function(){
-    var portfolio =[{name:"task1",info:"remo1"},{name:"task2",info:"remo2"},{name:"task3",info:"remo3"},{name:"task4",info:"remo4"},{name:"task5",info:"remo5"},{name:"task6",info:"remo6"},{name:"task7",info:"remo7"},{name:"task8",info:"remo8"}];
-    portfolio.forEach(function(ride){
-        $("#" +ride.name).mouseover(function(){
-            $("#"+ride.info).show();
-        }).mouseout(function(){
-            $("#"+ride.info).hide();
-        });
-    })
-});
+  
