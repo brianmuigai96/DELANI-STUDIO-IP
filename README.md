@@ -5,7 +5,7 @@ Amazing people are making amazing designs in a fun environment.
 
 
 ## Description
-This project is about Delani Studio where we offer a full range of services including brand strategy, interaction, visual design and user experience testing. Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.The link to Delani website https://github.com/brianmuigai96/DELANI-STUDIO-IP
+This project is about Delani Studio where we offer a full range of services including brand strategy, interaction, visual design and user experience testing. Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.The link to Delani website https://brianmuigai96.github.io/DELANI-STUDIO-IP/
 
 
  ## Author
