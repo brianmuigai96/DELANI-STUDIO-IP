@@ -60,6 +60,17 @@
 .what-we-do h1{
   text-align: center;
 }
+.card p{
+    display: none;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    line-height: 5.5;
+}
+.card:hover{
+    opacity: 0.6;
+}
+
 .dis{
     display: flex;
     justify-content: space-around;
