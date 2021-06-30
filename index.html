@@ -5,6 +5,8 @@
     <title>DELANI STUDIO</title>
     <link  href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <div class="intro">
@@ -114,7 +116,7 @@
     <div class="backgroundimage-ContactUs">
           <div class="contact">
               <div class="container form-info">
-                  <h3 style="margin-left: 40%;font-size: 250%;">CONTACT US</h3>
+                  <h3 class="con" style="margin-left: 40%;font-size: 250%;color:white;">CONTACT US</h3>
                   <div class="form">
                       <form action="" id="theform">
                           <div class="row">
@@ -128,9 +130,9 @@
                               </div>
                           </div>
                               <label for="exampleFormControlTextarea1" class="form-label"></label>
-                              <textarea id="message" class="form-control" placeholder="Your message here..." rows="7" spellcheck="false" style="margin-top: 10%;opacity: 0.3;font-size: 23px;"></textarea>
+                              <textarea id="message" class="form-control" placeholder="Your message here..." rows="11" spellcheck="false" ></textarea>
                           </div>
-                          <button type="submit" class="btn btn-light col-md-1" style="margin-left: 45%;background-color: gray;">Submit</button>
+                          <button type="submit" class="btn" style="margin-left: 45%;background-color: gray;">Submit</button>
                       </form>
                   </div>
               </div>
@@ -147,36 +149,5 @@
       <img src="flickr.png" alt="flickr">
       <p>DELANI STUDIO<br>2019</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(function()
-            {$(".time").hover(function()
-            {$(this).animate({"opacity":0.3},500)
-            },
-            function()
-            {$(this).animate({"opacity":1},500)});
-            });
-
-
-            $("#design-img").click(function(){
-                $("#design-text").show() && $("#design-img").hide() && $("#head1").hide();
-            });
-            $("#design-text").click(function(){
-                $("#design-text").hide() && $("#design-img").show() && $("#head1").show();
-            });
-            $("#development-img").click(function(){
-                $("#development-text").show() && $("#development-img").hide() && $("#head2").hide();
-            });
-            $("#development-text").click(function(){
-                $("#development-text").hide() && $("#development-img").show() && $("#head2").show();
-            });
-            $("#product-img").click(function(){
-                $("#product-text").show()&&  $("#product-img").hide() && $("#head3").hide();{
-                }
-            });
-            $("#product-text").click(function(){
-                $("#product-text").hide() && $("#product-img").show() && $("#head3").show();
-            });
-        </script>
   </body>
 </html>
