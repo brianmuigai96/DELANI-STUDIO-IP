@@ -28,11 +28,11 @@ $(document).ready(function(){
 // portfolio section
 $(document).ready(function(){
     var portfolio =[{name:"task1",info:"remo1"},{name:"task2",info:"remo2"},{name:"task3",info:"remo3"},{name:"task4",info:"remo4"},{name:"task5",info:"remo5"},{name:"task6",info:"remo6"},{name:"task7",info:"remo7"},{name:"task8",info:"remo8"}];
-    portfolio.forEach(function(project){
-        $("#" +project.name).mouseover(function(){
-            $("#"+project.info).show();
+    portfolio.forEach(function(ride){
+        $("#" +ride.name).mouseover(function(){
+            $("#"+ride.info).show();
         }).mouseout(function(){
-            $("#"+project.info).hide();
+            $("#"+ride.info).hide();
         });
     })
 });
