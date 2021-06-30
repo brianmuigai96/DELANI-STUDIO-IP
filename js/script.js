@@ -1,3 +1,4 @@
+// What we do toggling
 $(document).ready(function(){
   $("#design-img").click(function(){
       $("#design-text").show() && $("#design-img").hide() && $("#head1").hide();
